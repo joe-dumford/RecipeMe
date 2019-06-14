@@ -250,7 +250,7 @@ $(document).ready(function () {
                     let myUserID = firebase.auth().currentUser.uid;
                     database.ref("users/" + myUserID + "/" + objects[parseInt(istr)].name).push(objects[parseInt(istr)]);
                     var ref = database.ref("users/" + myUserID);
-                  
+
                     console.log(name);
 
                     var favList = "<li class='collection-item'> <div>" + name + "<a href='" + extURL + "'class='secondary-content'> <i class='material-icons'> whatshot </i></a></div></li>";
