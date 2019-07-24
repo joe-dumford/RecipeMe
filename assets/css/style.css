@@ -86,7 +86,6 @@ p {
     }
 }
 
-
 .icon-block {
     padding: 0 15px;
 }
@@ -96,6 +95,18 @@ p {
 }
 
 footer.page-footer {
+    margin: 0;
+    line-height: 20px;
+    margin-top: -8px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer.page-footer-2{
+    position: fixed;
+    background-color: #ee6e73;
     margin: 0;
     line-height: 20px;
     margin-top: -8px;
@@ -153,13 +164,22 @@ footer.page-footer {
 
 #logbox{
     margin-top: 25px;
-    color: green;
 }
 .active {
     font-family: 'Kaushan Script', cursive;
     font-size: 25px;
+    color: #DCDCDC;
+}
+#txtEmail {
+    font-family: 'Kaushan Script', cursive;
     color: #ee6e73;
 }
+
+#txtPassword {
+    font-family: 'Kaushan Script', cursive;
+    color: #ee6e73;
+}
+
 
 .col.s6>.btn {
     width: 100%;
