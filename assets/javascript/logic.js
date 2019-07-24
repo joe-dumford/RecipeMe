@@ -29,7 +29,6 @@ $(document).ready(function () {
     const btnSignUp = document.getElementById("btnSignUp");
     // const btnLogout = document.getElementById(“btnLogout”);
 
-
     // Add Login Event
     btnLogin.addEventListener("click", e => {
         // Get Email and Pass

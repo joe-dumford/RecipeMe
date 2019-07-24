@@ -1,12 +1,12 @@
 .brand-logo {
     font-family: 'Kaushan Script', cursive;
-    margin-left: 80px;
+   
 }
 
 #recipeimg {
     width: 30em;
     height: 30em;
-    margin-top: 10px;
+    margin-top: 10px; 
 }
 
 #ingredient-textbox {
