@@ -23,8 +23,6 @@ $(document).ready(function () {
     firebase.initializeApp(config);
     let database = firebase.database();
 
-
-
     const txtEmail = document.getElementById("txtEmail");
     const txtPassword = document.getElementById("txtPassword");
     const btnLogin = document.getElementById("btnLogin");
@@ -72,8 +70,7 @@ $(document).ready(function () {
         }
     });
 
-
-    //declare global objects for search results
+    //Declare Global Objects for search results
     let objects = [{
             name: "",
             imgURL: "",
@@ -205,14 +202,14 @@ $(document).ready(function () {
                     };
                 };
 
-                //set global objects to search values
+                //Set Global Objects to search values
                 objects[i].name = name;
                 objects[i].imgURL = imgURL;
                 objects[i].extURL = extURL;
                 objects[i].ytURL = ytURL;
                 objects[i].ingredients = ingredients;
 
-                //add new card
+                //Add New Card
                 let newcard = $("<div>").addClass("col s6").append(
                     $("<div>").addClass("card medium")
                     .append($("<div>").addClass("card-image waves-effect waves-block waves-light").append(
@@ -237,14 +234,14 @@ $(document).ready(function () {
                 );
                 $("#results").append(newcard);
 
-                //populate ingredients list
+                //Populate Ingredients List
                 for (k = 0; k < objects[i].ingredients.length; k++) {
                     let newdiv = $("<li>").addClass("collection-item")
                         .text(ingredients[k]);
                     $("#" + istr).append(newdiv);
                 };
 
-                //add-to-favorites event listener
+                //Add-To-Favorites event-listener
                 $("[ifav=" + istr + "]").on("click", function (event) {
                     event.preventDefault();
                     let myUserID = firebase.auth().currentUser.uid;
