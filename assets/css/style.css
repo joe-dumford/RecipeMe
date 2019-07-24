@@ -150,8 +150,15 @@ footer.page-footer {
     box-sizing: border-box;
     position: relative;
 }
-.container {
+
+#logbox{
     margin-top: 25px;
+    color: green;
+}
+.active {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+    color: #ee6e73;
 }
 
 .col.s6>.btn {
