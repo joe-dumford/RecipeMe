@@ -149,6 +149,7 @@ $(document).ready(function () {
         $("#content").empty();
         $("#resultscontainer").attr("style", "");
         $("#results").empty();
+        
         //API call for search
         let query = $("#search").val().trim();
         $("#search").val("");
